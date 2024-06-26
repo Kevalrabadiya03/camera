@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/icon" href="./img/favicon.png">
+  <!-- boostrap font awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+  <title>RK Photography</title>
+  <style>
+    .parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid text-center">
+        <a class="navbar-brand" href="#">RK Photo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse m-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ourstory">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ourteam">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="container" style="margin: 90px 0px;">
+        <div class="row">
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVW627wdnGpsRmRP5E08QhpUq35dUKgphbFQ&s"
+              width="350px" height="325px" alt="">
+          </div>
+          <div class="col text-center">
+            <h1 class="text-start" style=" font-family:monospace; color: rgb(58, 85, 237);">Camera</h1>
+            <h6 class="text-start" style="font-size: 20px; align-items: start;margin-top:50px;">A camera is an instrument used to capture and store images
+              and videos, either digitally via an electronic image sensor, or chemically via a light-sensitive material
+              such as photographic film.</h6>
+            <button type="button" class="btn btn-primary p-2 px-5 mt-5 ">Gallery</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container-fluid">
+        <h1 class="text-center mt-5" style="font-family:Dancing Script;">
+          About <span class="text-primary">me</span>
+          <hr class="m-auto" width="25%">
+        </h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col mt-5">
+            <div>
+              <p class="fs-3 text-center" style="font-family:Dancing Script;">
+                What do you <span class="text-primary "> want to know ?</span>
+              </p>
+              <p>
+                A camera is an instrument used to capture and store images and
+                camera dates back to the 19th century and has since evolved
+                with advancements in technology, leading to a vast array of
+                types and models in the 21st century.
+              </p>
+              <div class="container-fluid mt-5">
+                <div class="accordion " id="accordionExample">
+                  <div class="accordion-item ">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Vintage camera
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Started by steel trader Solaiyappan Ramanathan and his cousin (and artist) A.P. Shreethar, the
+                        camera museum opened on <strong> 1 June 2017.</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Canan
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Soney
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 col-md-6 col-12">
+            <div class="img d-flex justify-content-center py{300px} m-5 ">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgKuUOYBObkndjNKLl_OYTV8a6AaZTELAhbygg1PSZxg&s"
+                height="400px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our story bg-light mt-5  py-5" id="ourstory">
+      <div class="container m-auto">
+        <div class="font text-center">
+          <h1 class="text-center mt-5" style="font-family:Dancing Script;">Our <span class="text-primary"> Story</span>
+          </h1>
+          <hr class="m-auto" width="30%" />
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col">
+            <div class="card mt-5" style="width: 18rem; margin: 0px auto;">
+              <img src="./img/card-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mt-5" style="width: 18rem; margin: 0px auto;">
+              <img src="./img/card-1.jpg" height="190px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mt-5" style="width: 18rem; margin: 0px auto;">
+              <img src="./img/card-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="ourteam">
+      <div class="container-fluid px-5">
+        <h1 class="text-center mt-5" style="font-family:Dancing Script;">Our <span class="text-primary">Team</span>
+        </h1>
+        <hr class="m-auto" width="30%">
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col ms-5 mt-5">
+            <div class=" " style="width: 18rem;">
+              <img src="./img/team-1.jpg" class="img-fluid rounded-circle border border-primary p-2"
+                style="height: 300px; width: 300px;">
+              <div class="card-body">
+                <p class="card-text">
+                <h5>Néphore Niépce</h5>
+                </p>
+                <p>Photography Lorem ipsum dolor sit consectetur adipisicing Aliquam!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col ms-5 mt-5">
+            <div class="" style="width: 18rem;">
+              <img src="img/team-2.png  " class="img-fluid rounded-circle border border-primary p-2"
+                style="height: 300px; width: 300px;">
+              <div class="card-body">
+                <p class="card-text">
+                <h5>Daguerreotype</h5>
+                </p>
+                <p>Canon Lorem ipsum dolor sit amet consectetur adipisicing Placeat, eos. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col ms-5 mt-5">
+            <div class="" style="width: 18rem;">
+              <img src="img/team-1 (2).jpg" class="img-fluid rounded-circle border border-primary p-2"
+                style="height: 300px; width: 300px;">
+              <div class="card-body">
+                <p class="card-text">
+                <h5>Kel Comend</h5>
+                </p>
+                <p>Photography Lorem ipsum dolor sit consectetur adipisicing Laudantium!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Contact py-5" id="contat">
+      <div class="container text-center">
+        <h1 class="" style="font-family: Dancing Script;">Feel free <span class="text-primary">to connect</span></h1>
+        <hr width="40%" class="m-auto">
+      </div>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                  <option>Andhra Pradesh</option>
+                  <option>Arunachal Pradesh</option>
+                  <option>Assam</option>
+                  <option>Bihar</option>
+                  <option>Chhattisgarh</option>
+                  <option>Goa</option>
+                  <option>Gujarat</option>
+                  <option>Haryana</option>
+                  <option>Himachal Pradesh</option>
+                  <option>Jharkhand</option>
+                  <option>Karnataka</option>
+                  <option>Kerala</option>
+                  <option>Madhya Pradesh</option>
+                  <option>Maharashtra</option>
+                  <option>Manipur</option>
+                  <option>Uttar Pradesh</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary px-5">Sign in</button>
+              </div>
+            </form>
+          </div>
+          <div class="col col-sm-12 col-md-6 col-lg-6 col-12 text-end py-4">
+            <img src="./img/contct-2.png" height="400px" width="400px" class="" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<footer class="text-center text-lg-start bg-light text-muted">
+  <section class="">
+    <div class="container text-center text-md-start  pt-4">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">rkcamera.com</a>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
